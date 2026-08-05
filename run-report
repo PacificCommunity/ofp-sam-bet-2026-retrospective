@@ -10,6 +10,35 @@ export R_ENVIRON_USER=/dev/null
 export R_PROFILE_USER=/dev/null
 export R_LIBS_USER="$retro_library"
 
+runtime_token=""
+for token_name in GITHUB_PAT GIT_PAT GH_TOKEN GITHUB_TOKEN KFLOW_GITHUB_TOKEN KFLOW_PERSONAL_TOKEN; do
+  eval "token_value=\${$token_name:-}"
+  if [ -n "$token_value" ]; then
+    runtime_token=$token_value
+    break
+  fi
+done
+
+runtime_askpass="$retro_root/.runtime-git-askpass"
+if [ -n "$runtime_token" ]; then
+  cat > "$runtime_askpass" <<'ASKPASS'
+#!/bin/sh
+case "$1" in
+  *Username*) printf '%s\n' x-access-token ;;
+  *) printf '%s\n' "$RETRO_RUNTIME_GIT_TOKEN" ;;
+esac
+ASKPASS
+  chmod 700 "$runtime_askpass"
+fi
+
+runtime_git() {
+  if [ -n "$runtime_token" ]; then
+    GIT_ASKPASS="$runtime_askpass" GIT_TERMINAL_PROMPT=0 RETRO_RUNTIME_GIT_TOKEN="$runtime_token" git "$@"
+  else
+    GIT_TERMINAL_PROMPT=0 git -c credential.helper= "$@"
+  fi
+}
+
 install_runtime_package() {
   package=$1
   repository=$2
@@ -17,10 +46,10 @@ install_runtime_package() {
   source_dir="$retro_sources/$package"
 
   if [ ! -d "$source_dir/.git" ]; then
-    git clone --quiet "https://github.com/$repository.git" "$source_dir"
+    runtime_git clone --quiet "https://github.com/$repository.git" "$source_dir"
   fi
-  git -C "$source_dir" fetch --quiet origin "$revision"
-  git -C "$source_dir" checkout --quiet "$revision"
+  runtime_git -C "$source_dir" fetch --quiet origin "$revision"
+  runtime_git -C "$source_dir" checkout --quiet "$revision"
   R CMD INSTALL -l "$retro_library" "$source_dir"
 }
 
