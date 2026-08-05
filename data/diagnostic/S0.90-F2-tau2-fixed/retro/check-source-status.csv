@@ -1,0 +1,8 @@
+"check_type","model_key","n_units","n_success","n_failed","has_failures","requires_all_units","all_required_units_successful","merge_status","created_at","source_model_dir","success"
+"retro","S0.90-F2-tau2-fixed",1,1,0,FALSE,TRUE,TRUE,"complete","2026-08-03T16:37:47Z","/var/lib/condor/execute/dir_1517341/scratch/inputs/j1ea4437ac4e/checks/retro/S0.90-F2-tau2-fixed",TRUE
+"retro","S0.90-F2-tau2-fixed",1,1,0,FALSE,TRUE,TRUE,"complete","2026-08-03T16:00:53Z","/var/lib/condor/execute/dir_1517341/scratch/inputs/j5d51103e71a/checks/retro/S0.90-F2-tau2-fixed",TRUE
+"retro","S0.90-F2-tau2-fixed",1,1,0,FALSE,TRUE,TRUE,"complete","2026-08-03T16:50:20Z","/var/lib/condor/execute/dir_1517341/scratch/inputs/j0a177792426/checks/retro/S0.90-F2-tau2-fixed",TRUE
+"retro","S0.90-F2-tau2-fixed",1,1,0,FALSE,TRUE,TRUE,"complete","2026-08-03T16:52:47Z","/var/lib/condor/execute/dir_1517341/scratch/inputs/jb1ab47b9aa2/checks/retro/S0.90-F2-tau2-fixed",TRUE
+"retro","S0.90-F2-tau2-fixed",1,1,0,FALSE,TRUE,TRUE,"complete","2026-08-03T16:09:24Z","/var/lib/condor/execute/dir_1517341/scratch/inputs/jd01b3877e29/checks/retro/S0.90-F2-tau2-fixed",TRUE
+"retro","S0.90-F2-tau2-fixed",1,1,0,FALSE,TRUE,TRUE,"complete","2026-08-03T16:23:07Z","/var/lib/condor/execute/dir_1517341/scratch/inputs/je163d4dbd40/checks/retro/S0.90-F2-tau2-fixed",TRUE
+"retro","S0.90-F2-tau2-fixed",1,1,0,FALSE,TRUE,TRUE,"complete","2026-08-03T16:47:14Z","/var/lib/condor/execute/dir_1517341/scratch/inputs/j81106751b25/checks/retro/S0.90-F2-tau2-fixed",TRUE

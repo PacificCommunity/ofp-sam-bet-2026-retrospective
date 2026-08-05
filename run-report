@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+sha256sum -c data/SHA256SUMS
+exec Rscript report/render.R

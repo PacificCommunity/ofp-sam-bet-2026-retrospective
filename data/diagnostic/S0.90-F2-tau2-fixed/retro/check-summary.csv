@@ -1,0 +1,2 @@
+"check_type","model_key","n_units","n_success","n_failed","has_failures","n_source_model_dirs","n_source_units","n_source_failed","expected_unit_type","expected_units","n_expected_units","n_missing_expected","requires_all_units","all_expected_units_accounted_for","unit_failures_are_diagnostic_outcomes","all_required_units_successful","merge_status","created_at"
+"retro","S0.90-F2-tau2-fixed",7,7,0,FALSE,7,7,0,"peel","1 2 3 4 5 6 7",7,0,TRUE,TRUE,TRUE,TRUE,"complete","2026-08-03T16:55:13Z"

@@ -1,0 +1,12 @@
+name: ofp-sam-bet-2026-retrospective
+description: Render the public payload-based retrospective report for the BET 2026 Diagnostic model.
+command: ./run-report
+docker_image: ghcr.io/pacificcommunity/tuna-flow:v2.5@sha256:c87f1f6d9d4f62dc447844b58afe35f96af175bf933cb6cffbbbe39a59172360
+
+resources:
+  cpus: 4
+  memory: 8GB
+  disk: 8GB
+
+output_patterns:
+  - results/**

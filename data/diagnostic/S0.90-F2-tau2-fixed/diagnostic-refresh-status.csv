@@ -1,0 +1,5 @@
+"step","ok","message"
+"mfclkit_collect_diagnostics_before_payload",TRUE,""
+"mfclshiny_build_model_payload",TRUE,""
+"mfclkit_collect_diagnostics_after_payload",TRUE,""
+"embed_diagnostic_status_in_payload",TRUE,""
