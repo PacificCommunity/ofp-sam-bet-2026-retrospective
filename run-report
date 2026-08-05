@@ -1,5 +1,34 @@
 #!/bin/sh
 set -eu
 
+retro_root=$(pwd)
+retro_library="$retro_root/.R-library"
+retro_sources="$retro_root/.runtime-sources"
+mkdir -p "$retro_library" "$retro_sources"
+
+export R_ENVIRON_USER=/dev/null
+export R_PROFILE_USER=/dev/null
+export R_LIBS_USER="$retro_library"
+
+install_runtime_package() {
+  package=$1
+  repository=$2
+  revision=$3
+  source_dir="$retro_sources/$package"
+
+  if [ ! -d "$source_dir/.git" ]; then
+    git clone --quiet "https://github.com/$repository.git" "$source_dir"
+  fi
+  git -C "$source_dir" fetch --quiet origin "$revision"
+  git -C "$source_dir" checkout --quiet "$revision"
+  R CMD INSTALL -l "$retro_library" "$source_dir"
+}
+
+if ! Rscript -e 'quit(status=if(requireNamespace("mfclshiny", quietly=TRUE) && exists("build_retrospective_report", envir=asNamespace("mfclshiny"), inherits=FALSE)) 0L else 1L)'; then
+  install_runtime_package FLR4MFCL PacificCommunity/ofp-sam-flr4mfcl 3faaf84a4867175bfea50d89e4d518c085e84739
+  install_runtime_package mfclkit PacificCommunity/ofp-sam-mfclkit cf786007b5261f84faac8f3d24f7084bd323119d
+  install_runtime_package mfclshiny PacificCommunity/mfclshiny a8dffd78de61c99af8cf5b1f6995e861157dc96c
+fi
+
 sha256sum -c data/SHA256SUMS
 exec Rscript report/render.R

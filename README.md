@@ -12,11 +12,15 @@ working files are excluded.
 
 ## Render
 
-Install `mfclshiny` with the public retrospective-report API, then run:
+Run:
 
 ```sh
 ./run-report
 ```
+
+The runner reuses the pinned report runtime when available and otherwise
+installs the exact public FLR4MFCL, mfclkit, and mfclshiny revisions used for
+the report.
 
 The runner verifies the payload hashes before rendering a self-contained HTML
 report, publication PNG/PDF figures, and LaTeX tables in `results/`.
