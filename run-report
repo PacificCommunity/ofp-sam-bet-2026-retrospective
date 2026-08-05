@@ -56,7 +56,7 @@ install_runtime_package() {
 if ! Rscript -e 'quit(status=if(requireNamespace("mfclshiny", quietly=TRUE) && exists("build_retrospective_report", envir=asNamespace("mfclshiny"), inherits=FALSE)) 0L else 1L)'; then
   install_runtime_package FLR4MFCL PacificCommunity/ofp-sam-flr4mfcl 3faaf84a4867175bfea50d89e4d518c085e84739
   install_runtime_package mfclkit PacificCommunity/ofp-sam-mfclkit cf786007b5261f84faac8f3d24f7084bd323119d
-  install_runtime_package mfclshiny PacificCommunity/mfclshiny a8dffd78de61c99af8cf5b1f6995e861157dc96c
+  install_runtime_package mfclshiny PacificCommunity/mfclshiny d76d3cebb3007c633ae64ee8f96cb75632b7d79c
 fi
 
 sha256sum -c data/SHA256SUMS
