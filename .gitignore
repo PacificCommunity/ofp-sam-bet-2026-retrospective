@@ -1,4 +1,12 @@
 .R-library/
 .runtime-sources/
 .runtime-git-askpass
-results/
+results/*
+!results/retrospective-report.html
+!results/figures/
+results/figures/*
+!results/figures/*.png
+!results/tables/
+results/tables/*
+!results/tables/*.csv
+!results/tables/*.tex

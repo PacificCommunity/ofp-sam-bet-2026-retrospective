@@ -1,0 +1,35 @@
+\paragraph{Recent fishing-mortality diagnostic.}
+For a model fitted through year $b$, the value evaluated at year $t$ is
+\[
+\overline{F}^{(b)}_{t}=\frac{1}{4}\sum_{y=t-4}^{t-1}F^{(b)}_{y}.
+\]
+For peel $p$, $t=T-p$ and
+\[
+d_{F,p}=\frac{\overline{F}^{(T-p)}_{T-p}-\overline{F}^{(T)}_{T-p}}{\overline{F}^{(T)}_{T-p}},\qquad
+\rho_F=\frac{1}{n}\sum_{p=1}^{n}d_{F,p}.
+\]
+For the 7 converged peels, $\rho_F=0.231531$.
+Annual instantaneous fishing mortality is averaged over 4 years from $T-4$ to $T-1$.
+
+% Requires \usepackage{booktabs,tabularx,array}
+\begin{table}[htbp]
+\centering
+\caption{Recent annual fishing-mortality estimates and peel-to-full-data relative differences for S0.90-F2-tau2-fixed.}
+\label{tab:retrospective-recent-f-calculation-s0-90-f2-tau2-fixed}
+\small
+\setlength{\tabcolsep}{7pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}r>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X>{\raggedleft\arraybackslash}X@{}}
+\toprule
+\textbf{Peel} & \textbf{\shortstack{Terminal\\year}} & \textbf{Recent period} & \textbf{Peel estimate} & \textbf{Matched full-data estimate} & \textbf{Relative difference} \\
+\midrule
+1 & 2023 & 2019--2022 & 0.526388 & 0.420656 & 0.251349 \\
+2 & 2022 & 2018--2021 & 0.460647 & 0.370974 & 0.241723 \\
+3 & 2021 & 2017--2020 & 0.435096 & 0.344984 & 0.261205 \\
+4 & 2020 & 2016--2019 & 0.438843 & 0.357314 & 0.228172 \\
+5 & 2019 & 2015--2018 & 0.492278 & 0.376395 & 0.307875 \\
+6 & 2018 & 2014--2017 & 0.446969 & 0.388215 & 0.151342 \\
+7 & 2017 & 2013--2016 & 0.463664 & 0.393251 & 0.179051 \\
+\bottomrule
+\end{tabularx}
+\end{table}
