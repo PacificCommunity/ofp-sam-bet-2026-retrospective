@@ -32,5 +32,31 @@ result <- mfclshiny::build_retrospective_report(
   render_html = TRUE
 )
 
+# The browser report is also used as a stand-alone supporting document.  It
+# should therefore not expose manuscript placeholders such as "Figure XX" or
+# "Table XX".  Manuscript numbering is assigned only when an item is included
+# in the assessment report.
+html_path <- result$html
+html <- paste(readLines(html_path, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
+html <- gsub(
+  "Figure <span class=['\"]figure-number['\"][^>]*>XX</span>\\.",
+  "Figure.",
+  html,
+  perl = TRUE
+)
+html <- gsub(
+  "Table <span class=['\"]table-number['\"][^>]*>XX</span>\\.",
+  "Table.",
+  html,
+  perl = TRUE
+)
+html <- gsub(
+  "<a href=\"(https?://[^\"]+)\"",
+  "<a href=\"\\1\" target=\"_blank\" rel=\"noopener noreferrer\"",
+  html,
+  perl = TRUE
+)
+writeLines(html, html_path, useBytes = TRUE)
+
 message("Rendered retrospective report: ", result$html)
 message("Diagnostic model retrospective peels: ", nrow(result$data$runs))
