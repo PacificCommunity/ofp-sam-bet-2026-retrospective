@@ -25,8 +25,8 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "git_blob": "6f9120e2cd66e76d1ab7b31aaeaf1d418a7ca137",
-      "sha256": "8e60ec1390c89dce8bcd976d53c4f5bdc87c2aebe2cceb4bb658f146e97c97c6"
+      "git_blob": "ddce2960732360c35c717509e52d9373c3ed9230",
+      "sha256": "6bb8301006430fb00ac85da108fb9b23939ee5e03e0710bfb12e0d902e246a8e"
     },
     {
       "path": "data/SHA256SUMS",
@@ -405,6 +405,20 @@
       "mode": "100755",
       "git_blob": "179db0e67f1ca91d0e92c4ab3406cef29ba50d79",
       "sha256": "ec4aeda9d5e50aad9d7616a3607bd91f0b9950ed38c0a9e1eb72f6d9f3fccbe5"
+    }
+  ],
+  "approved_updates": [
+    {
+      "path": "README.md",
+      "reason": "Add current CI status badges requested by Kyuhan. The complete previous README body is byte-identical after removing the exact badge prefix. Scientific files, reports, links and anchors are unchanged.",
+      "previous_sha256": "8e60ec1390c89dce8bcd976d53c4f5bdc87c2aebe2cceb4bb658f146e97c97c6",
+      "previous_git_blob": "458b8a83a0a8d4b23729b2921a3714ccd991184a",
+      "expected_sha256": "6bb8301006430fb00ac85da108fb9b23939ee5e03e0710bfb12e0d902e246a8e",
+      "expected_git_blob": "ddce2960732360c35c717509e52d9373c3ed9230",
+      "exact_added_prefix": "[![Preservation checks](https://github.com/PacificCommunity/ofp-sam-bet-2026-retrospective/actions/workflows/verify-preserved-results.yml/badge.svg?branch=main)](https://github.com/PacificCommunity/ofp-sam-bet-2026-retrospective/actions/workflows/verify-preserved-results.yml?query=branch%3Amain)\n\n",
+      "authorization": "Task-scoped human instruction: CI\ub41c\uac83\ub4e4\uc740 \ub9ac\ub4dc\ubbf8\uc5d0 \uadf8 \uccb4\ud06c\ubc43\uc9c0\ub098 \uc774\ub7f0\uac70\ub3c4 \uc880 \ub123\uc5b4\uc8fc\uba74 \uc88b\uaca0\ub2e4",
+      "inherited_guard_git_blob": "6f9120e2cd66e76d1ab7b31aaeaf1d418a7ca137",
+      "metadata_note": "Previous SHA256 matches exact current README bytes. The inherited guard Git blob was stale; that older record remains unchanged and is recorded separately."
     }
   ]
 }
