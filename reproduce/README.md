@@ -7,7 +7,7 @@ from the archived model payload. Their native bytes, permissions and checksums
 are recorded in `files.json`.
 
 ```sh
-python3 reproduce/restore.py --verify
+make verify
 ```
 
 To extract only the seven saved PARs into a new directory:
@@ -24,5 +24,7 @@ independently regenerated and checked. A shared Diagnostic input cannot replace
 peel-specific data.
 
 The existing report and cached results remain readable and reproducible using
-`./run-report`. Those results do not close the missing native inputs. Do not
+`make results`. Those results do not close the missing native inputs. Do not
 remove the original retrospective source files on the basis of this archive.
+
+For new full refits with the pinned private package, see the [mfclkit guide](mfclkit.md).

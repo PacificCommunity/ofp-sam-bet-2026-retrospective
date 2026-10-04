@@ -21,7 +21,7 @@ listed there.
 Run:
 
 ```sh
-./run-report
+make results
 ```
 
 The runner reuses the pinned report runtime when available and otherwise
@@ -32,3 +32,9 @@ access to their private repositories.
 The runner verifies the payload hashes before rendering a self-contained HTML
 report, publication PNG/PDF figures, and LaTeX tables in `results/`.
 
+
+## New full refits
+
+See the concise [mfclkit guide](../reproduce/mfclkit.md) for `make refit-plan` and
+`make refit`, their pinned native-fit package revisions, and the missing prepared
+start PAR. A new refit is separate from rendering the saved report.

@@ -19,12 +19,17 @@ jobs:
           r-version: release
       - name: Verify saved native PAR archive
         run: python3 reproduce/restore.py --verify
+      - name: Check Make entry points without executing models
+        run: python3 ci/check-make-entrypoints.py
       - name: Verify preserved assessment files
         run: python3 ci/verify-preserved-files.py
       - name: Check preserved inputs and results
         shell: bash
         run: |
           sha256sum -c data/SHA256SUMS
+          Rscript --vanilla -e 'parse(file="reproduce/refit.R")'
+          Rscript --vanilla ci/check-refit-paths.R
+          make refit-plan
           Rscript -e 'paths <- list.files(".", pattern="[.][Rr]$", recursive=TRUE, full.names=TRUE); for (path in paths) parse(file=path)'
           Rscript -e 'paths <- list.files("data", pattern="[.]rds$", recursive=TRUE, full.names=TRUE); stopifnot(length(paths) > 0L); invisible(lapply(paths, readRDS))'
           python3 ci/verify-preserved-files.py
