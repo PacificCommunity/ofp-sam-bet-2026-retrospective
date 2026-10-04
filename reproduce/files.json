@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "family": "retrospective",
+  "files": [
+    {
+      "path": "peel_5/final.par",
+      "sha256": "40b6445ebeec09b2eb9f5545b370ab1b7eb550354ced4ff9fbe4f8fb598f37d2",
+      "bytes": 2724966,
+      "mode": 384,
+      "role": "last_PAR",
+      "source_git_pin": {
+        "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+        "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6"
+      }
+    },
+    {
+      "path": "peel_7/final.par",
+      "sha256": "f0a748ef3ffa4f842e45d28d7a4583d8492d9c1deb693dc2cee05823786066dd",
+      "bytes": 2634303,
+      "mode": 384,
+      "role": "last_PAR",
+      "source_git_pin": {
+        "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+        "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6"
+      }
+    },
+    {
+      "path": "peel_1/final.par",
+      "sha256": "585dba52f24e283477dd9657d7d4c3b049dc52a87fe24b29d4a7de1172d14b1e",
+      "bytes": 2913188,
+      "mode": 384,
+      "role": "last_PAR",
+      "source_git_pin": {
+        "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+        "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6"
+      }
+    },
+    {
+      "path": "peel_3/final.par",
+      "sha256": "88dc4fff7280dae5d7bee940d12219274931175ce363039edccbe4aa94289b3f",
+      "bytes": 2821820,
+      "mode": 384,
+      "role": "last_PAR",
+      "source_git_pin": {
+        "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+        "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6"
+      }
+    },
+    {
+      "path": "peel_4/final.par",
+      "sha256": "b4126f6fd2941b5f342814c3cdce9e6171f6b32b5664c7027993cba10ca9766b",
+      "bytes": 2772533,
+      "mode": 384,
+      "role": "last_PAR",
+      "source_git_pin": {
+        "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+        "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6"
+      }
+    },
+    {
+      "path": "peel_2/final.par",
+      "sha256": "85221f123c9ce3f099f806d643ec5d1d23e5228b0a6de2604b6f7889a66a160e",
+      "bytes": 2869425,
+      "mode": 384,
+      "role": "last_PAR",
+      "source_git_pin": {
+        "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+        "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6"
+      }
+    },
+    {
+      "path": "peel_6/final.par",
+      "sha256": "1bf7b7b04bdbff89004a36d70a7917d195cefad202a96484938e936b62dbc08a",
+      "bytes": 2679506,
+      "mode": 384,
+      "role": "last_PAR",
+      "source_git_pin": {
+        "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+        "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6"
+      }
+    }
+  ],
+  "native_byte_scope": "Native PAR bytes recovered losslessly from stored raw byte vectors; they are original native file contents, not newly fitted or reconstructed numeric parameters.",
+  "losslessly_recovered_native_file_count": 7,
+  "source_git_pin_scope": "Code revision that generated or supported these native file contents; generated files need not be tracked at their archive pathname."
+}

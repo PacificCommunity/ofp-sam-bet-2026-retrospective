@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "family": "retrospective",
+  "shared_reused_git_files": [
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+      "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6",
+      "path": "retro/run.sh",
+      "sha256": "475c2b8810fd5dcd58c84dc8624397c2349543db9566c948e8cb6cf2df6e5a79",
+      "bytes": 302,
+      "mode": 493,
+      "role": "original_retrospective_controller"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+      "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6",
+      "path": "run.sh",
+      "sha256": "db32d58ed33806ee8e175db56d887cc9630c68b2540a5ce010941fc314171821",
+      "bytes": 9250,
+      "mode": 493,
+      "role": "original_retrospective_controller"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+      "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6",
+      "path": "R/run_check.R",
+      "sha256": "90a132b8614fe71939b0ab63e83b8bfdf70df0f59ff3e5d10464804a511ce8d8",
+      "bytes": 115812,
+      "mode": 420,
+      "role": "original_retrospective_controller"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-checks",
+      "commit": "2602c6a92a5169f1b0f391f937a61f6c9dcaccf6",
+      "path": "R/model_output_adapter.R",
+      "sha256": "1a686a5dafb7c6b2cf964a13f7298e9f26caf7c4c193576655ad6723a831f973",
+      "bytes": 64112,
+      "mode": 420,
+      "role": "original_retrospective_controller"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+      "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+      "path": "data/diagnostic/mfcl/bet.age_length",
+      "sha256": "426859b825bd815aa69c8d97c9dd93097027ed1eb6b9e444d88b69562097a00c",
+      "bytes": 1403841,
+      "mode": 420,
+      "role": "central_native_input"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+      "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+      "path": "data/diagnostic/mfcl/bet.frq",
+      "sha256": "d0d84f0a498e6a62681f2a58ffc1ba53dab9e3d6af856b4ad1fd907196250004",
+      "bytes": 2932052,
+      "mode": 420,
+      "role": "central_native_input"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+      "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+      "path": "data/diagnostic/mfcl/bet.ini",
+      "sha256": "fbd064c3d0ccb4d2e1b9beb06fe3eacf0180677821e6a1773d20b308474d984e",
+      "bytes": 66791,
+      "mode": 420,
+      "role": "central_native_input"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+      "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+      "path": "data/diagnostic/mfcl/bet.reg_scaling",
+      "sha256": "5f047ddb4053d1f6df9ace18e85e440b11553de246d024ce8138b427f5f9f7e3",
+      "bytes": 1186,
+      "mode": 420,
+      "role": "central_native_input"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+      "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+      "path": "data/diagnostic/mfcl/bet.tag",
+      "sha256": "b140e66eb52f2b7e022ef2c562134f8bc9baf3dede18ce95283a001acd2b013f",
+      "bytes": 110051,
+      "mode": 420,
+      "role": "central_native_input"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+      "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+      "path": "data/diagnostic/mfcl/doitall.sh",
+      "sha256": "ad8ca660b6d84f9bbd1d8024f616a5bd66047a44ecc2c6e8b5c61c6be089fc5c",
+      "bytes": 48341,
+      "mode": 493,
+      "role": "central_native_input"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+      "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+      "path": "data/diagnostic/mfcl/mfcl.cfg",
+      "sha256": "2ec8a291fae62c6f37541aec1de37444626d42b3290b371bb42b63d510034eae",
+      "bytes": 31,
+      "mode": 420,
+      "role": "central_native_input"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+      "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+      "path": "data/diagnostic/mfcl/mfclo64",
+      "sha256": "f5bc1e232a86e51f920bce7271d8e0930d0b160e4d18dc46de44078f0fa24cd0",
+      "bytes": 34549392,
+      "mode": 493,
+      "role": "static_native_evaluation_engine_candidate"
+    },
+    {
+      "repository": "PacificCommunity/ofp-sam-bet-2026-diagnostic",
+      "commit": "81c11f06fcc7450f69b379160cbd77fbc636212b",
+      "path": "mfclo64",
+      "sha256": "8995f72019869863c1d1c0b4f44fc6a6268d1f79031f5bc79dc354ee10f0a63e",
+      "bytes": 9433720,
+      "mode": 493,
+      "role": "distinct_source_bundled_engine"
+    }
+  ],
+  "reuse_scope": "Pinned existing public Git blobs; none of these scientific file bytes is duplicated into the compact native packages.",
+  "limits_and_gaps": [
+    "Native evaluation/output-regeneration parity awaits actual authorized CI; source byte preservation alone does not prove parity.",
+    "Original external model-executed engine hash remains UNKNOWN; exact static candidate and distinct source-bundled engine hashes are preserved separately.",
+    "Seven saved final PARs are recovered losslessly, but their original per-peel native FRQ/INI/TAG byte identities remain unavailable. Central inputs/controllers do not yet prove faithful generated peel inputs."
+  ],
+  "models": [
+    {
+      "model": "peel_1",
+      "reused_git_files": [
+        {
+          "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+          "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+          "path": "data/diagnostic/mfcl/bet.reg_scaling",
+          "sha256": "5f047ddb4053d1f6df9ace18e85e440b11553de246d024ce8138b427f5f9f7e3",
+          "bytes": 1186,
+          "mode": 420,
+          "role": "native_input_or_doitall",
+          "target_name": "bet.reg_scaling"
+        }
+      ],
+      "missing_original_native_inputs": [
+        "bet.frq",
+        "bet.ini",
+        "bet.tag"
+      ],
+      "native_rerun_enabled": false
+    },
+    {
+      "model": "peel_2",
+      "reused_git_files": [
+        {
+          "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+          "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+          "path": "data/diagnostic/mfcl/bet.reg_scaling",
+          "sha256": "5f047ddb4053d1f6df9ace18e85e440b11553de246d024ce8138b427f5f9f7e3",
+          "bytes": 1186,
+          "mode": 420,
+          "role": "native_input_or_doitall",
+          "target_name": "bet.reg_scaling"
+        }
+      ],
+      "missing_original_native_inputs": [
+        "bet.frq",
+        "bet.ini",
+        "bet.tag"
+      ],
+      "native_rerun_enabled": false
+    },
+    {
+      "model": "peel_3",
+      "reused_git_files": [
+        {
+          "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+          "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+          "path": "data/diagnostic/mfcl/bet.reg_scaling",
+          "sha256": "5f047ddb4053d1f6df9ace18e85e440b11553de246d024ce8138b427f5f9f7e3",
+          "bytes": 1186,
+          "mode": 420,
+          "role": "native_input_or_doitall",
+          "target_name": "bet.reg_scaling"
+        }
+      ],
+      "missing_original_native_inputs": [
+        "bet.frq",
+        "bet.ini",
+        "bet.tag"
+      ],
+      "native_rerun_enabled": false
+    },
+    {
+      "model": "peel_4",
+      "reused_git_files": [
+        {
+          "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+          "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+          "path": "data/diagnostic/mfcl/bet.reg_scaling",
+          "sha256": "5f047ddb4053d1f6df9ace18e85e440b11553de246d024ce8138b427f5f9f7e3",
+          "bytes": 1186,
+          "mode": 420,
+          "role": "native_input_or_doitall",
+          "target_name": "bet.reg_scaling"
+        }
+      ],
+      "missing_original_native_inputs": [
+        "bet.frq",
+        "bet.ini",
+        "bet.tag"
+      ],
+      "native_rerun_enabled": false
+    },
+    {
+      "model": "peel_5",
+      "reused_git_files": [
+        {
+          "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+          "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+          "path": "data/diagnostic/mfcl/bet.reg_scaling",
+          "sha256": "5f047ddb4053d1f6df9ace18e85e440b11553de246d024ce8138b427f5f9f7e3",
+          "bytes": 1186,
+          "mode": 420,
+          "role": "native_input_or_doitall",
+          "target_name": "bet.reg_scaling"
+        }
+      ],
+      "missing_original_native_inputs": [
+        "bet.frq",
+        "bet.ini",
+        "bet.tag"
+      ],
+      "native_rerun_enabled": false
+    },
+    {
+      "model": "peel_6",
+      "reused_git_files": [
+        {
+          "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+          "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+          "path": "data/diagnostic/mfcl/bet.reg_scaling",
+          "sha256": "5f047ddb4053d1f6df9ace18e85e440b11553de246d024ce8138b427f5f9f7e3",
+          "bytes": 1186,
+          "mode": 420,
+          "role": "native_input_or_doitall",
+          "target_name": "bet.reg_scaling"
+        }
+      ],
+      "missing_original_native_inputs": [
+        "bet.frq",
+        "bet.ini",
+        "bet.tag"
+      ],
+      "native_rerun_enabled": false
+    },
+    {
+      "model": "peel_7",
+      "reused_git_files": [
+        {
+          "repository": "PacificCommunity/ofp-sam-bet-2026-jitter",
+          "commit": "bb3f4016b2d145f42c7a76072ed2b10b49aff71f",
+          "path": "data/diagnostic/mfcl/bet.reg_scaling",
+          "sha256": "5f047ddb4053d1f6df9ace18e85e440b11553de246d024ce8138b427f5f9f7e3",
+          "bytes": 1186,
+          "mode": 420,
+          "role": "native_input_or_doitall",
+          "target_name": "bet.reg_scaling"
+        }
+      ],
+      "missing_original_native_inputs": [
+        "bet.frq",
+        "bet.ini",
+        "bet.tag"
+      ],
+      "native_rerun_enabled": false
+    }
+  ]
+}

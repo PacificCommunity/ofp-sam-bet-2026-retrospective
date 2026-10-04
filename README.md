@@ -1,29 +1,26 @@
 # BET 2026 Diagnostic model retrospective
 
-This public repository contains the compact, report-ready payload needed to
-recreate the seven-peel retrospective report for the BET 2026 Diagnostic
-model. It uses the completed model and retrospective outputs; it does not run
-MFCL or refit any peel.
+[View results](https://pacificcommunity.github.io/ofp-sam-bet-2026-retrospective/retrospective-report.html).
 
-The payload contains the fitted Diagnostic model and the seven retrospective
-peels ending in 2017--2023, with the full-data fit ending in 2024. Original
-MFCL inputs, executables, raw logs, private paths, credentials, and Kflow
-working files are excluded.
+This repository contains the saved results for the seven-peel retrospective
+analysis of the BET 2026 Diagnostic model. The peels end in 2017–2023;
+the full-data fit ends in 2024.
 
 ## Render
 
-Run:
+From the repository root:
 
 ```sh
 ./run-report
 ```
 
-The runner reuses the pinned report runtime when available and otherwise
-installs the exact public FLR4MFCL, mfclkit, and mfclshiny revisions used for
-the report.
+The runner checks payload hashes, then writes a self-contained HTML report,
+PNG/PDF figures and LaTeX tables to `results/`. Rendering uses completed
+model outputs and does not refit the peels.
 
-The runner verifies the payload hashes before rendering a self-contained HTML
-report, publication PNG/PDF figures, and LaTeX tables in `results/`.
-
-The report uses exactly the same completed retrospective payload as Kflow Job
-22619 and is intended for report generation on Kflow Local.
+The seven exact peel PARs are retained in `reproduce/` and can be checked
+with `python3 reproduce/restore.py --verify`. The matching peeled input sets
+are incomplete, so the restoration helper currently refuses native reruns.
+See [native-file status](reproduce/README.md) and
+[runtime instructions](docs/reproduction.md). Installing the pinned private
+report packages from source requires authorised access.
