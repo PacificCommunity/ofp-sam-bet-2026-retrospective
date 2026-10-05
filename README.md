@@ -24,7 +24,8 @@ model outputs and does not refit the peels.
 The seven original peel PARs are retained, but their matching peeled input
 sets are incomplete, so saved-PAR native reruns remain unavailable. See
 [native-file status](reproduce/README.md). The [mfclkit guide](reproduce/mfclkit.md)
-provides `make refit-plan` and `make refit` for new full refits when the complete
-prepared baseline is available, including the original `00.fixed.par`.
+provides `make prepare`, `make refit-plan` and `make refit` for new full refits.
+The compact baseline includes the recovered original `00.fixed.par` and pinned
+MFCL engine; private mfclkit package access is still required.
 `make help` lists the commands; [runtime instructions](docs/reproduction.md)
 cover the saved report.

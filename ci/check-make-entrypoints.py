@@ -23,7 +23,7 @@ TARGETS = {
     "report": ("help", "verify", "rerun", "restore", "build"),
     "jitter": ("help", "verify", "native-check", "rerun", "prepare", "refit"),
     "selftest": ("help", "verify", "results", "rerun", "refit-plan", "refit"),
-    "retrospective": ("help", "verify", "results", "rerun", "refit-plan", "refit"),
+    "retrospective": ("help", "verify", "prepare", "results", "rerun", "refit-plan", "refit"),
     "sensitivity": ("help", "verify", "results", "rerun", "restore", "refit"),
     "stepwise": ("rerun-help", "verify", "results", "rerun", "restore", "refit"),
     "checks": ("rerun-help", "verify", "test", "prepare", "rerun", "refit"),

@@ -27,4 +27,14 @@ The existing report and cached results remain readable and reproducible using
 `make results`. Those results do not close the missing native inputs. Do not
 remove the original retrospective source files on the basis of this archive.
 
-For new full refits with the pinned private package, see the [mfclkit guide](mfclkit.md).
+`refit-baseline.tar.gz` (11 MB) contains the original common inputs, recovered
+`00.fixed.par`, source configuration and pinned F5 engine for new full refits.
+It does not contain the missing historical peel-specific inputs.
+
+```sh
+make prepare INPUT=/absolute/new-baseline
+```
+
+`INPUT` must be absent, outside the checkout, with an existing parent directory.
+`make verify` checks both archives and their member hashes. For the pinned private
+package requirements and full-refit commands, see the [mfclkit guide](mfclkit.md).

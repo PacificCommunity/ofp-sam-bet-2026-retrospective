@@ -29,3 +29,18 @@ refit-plan:
 
 refit:
 	RETRO_PEELS="$(RETRO_PEELS)" Rscript --vanilla reproduce/refit.R --run --input "$(INPUT)" --out "$(OUT)" --mfcl "$(MFCL)"
+
+.PHONY: prepare _verify-refit-baseline _help-refit-baseline
+
+verify: _verify-refit-baseline
+help: _help-refit-baseline
+
+_verify-refit-baseline:
+	python3 reproduce/baseline.py --verify
+
+_help-refit-baseline:
+	@printf '%s\n' 'make prepare INPUT=/absolute/new-baseline   Extract the pinned full-refit inputs and MFCL engine.'
+
+prepare: export BET_RETRO_BASELINE_INPUT = $(INPUT)
+prepare:
+	python3 reproduce/baseline.py --prepare

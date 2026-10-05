@@ -9,7 +9,7 @@ import sys
 root = Path(__file__).resolve().parent.parent
 manifest = json.loads((root / "ci/preserved-files.json").read_text())
 failures = []
-for record in manifest["files"]:
+for record in manifest["files"] + manifest.get("approved_additions", []):
     relative = PurePosixPath(record["path"])
     if relative.is_absolute() or ".." in relative.parts:
         failures.append(f"Invalid preserved path: {relative}")
@@ -35,4 +35,5 @@ for record in manifest["files"]:
 if failures:
     print("\n".join(failures), file=sys.stderr)
     raise SystemExit(1)
-print(f'Preserved {len(manifest["files"])} files from {manifest["source_commit"]}.')
+print(f'Preserved {len(manifest["files"])} assessment-source files; '
+      f'verified {len(manifest.get("approved_additions", []))} approved additions.')

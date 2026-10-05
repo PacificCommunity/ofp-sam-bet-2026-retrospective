@@ -23,26 +23,27 @@ These are the original native-fit revisions; the saved-report runtime uses
 other pinned revisions. The wrapper checks installed `RemoteSha` values.
 It does not install packages, obtain credentials or submit jobs.
 
-Prepare `INPUT` from the pinned
+The 11 MB `refit-baseline.tar.gz` includes the original common inputs from the pinned
 [Diagnostic model](https://github.com/PacificCommunity/ofp-sam-bet-2026-diagnostic/tree/3abf0c64fb9b0c2d70b9c672dc7d9a655d3060d6/model):
 `bet.frq`, `bet.ini`, `bet.tag`, `bet.age_length`, `bet.reg_scaling`, `mfcl.cfg`,
 `doitall.sh`, `model-inputs/S0.90-F2.conf`, and `selectivity-models/F2.csv`.
-The original prepared `00.fixed.par` is also required
-(MD5 `01c9056f7268fb643cfc77382980ace0`). This start PAR is absent from that
-public baseline and has not been recovered here. The wrapper refuses an
-automatic alternative initialization. `MFCL` must be the published
+It also contains the recovered original prepared `00.fixed.par`
+(MD5 `01c9056f7268fb643cfc77382980ace0`) and the published
 [F5 engine](https://github.com/PacificCommunity/ofp-sam-bet-2026-jitter/blob/bb3f4016b2d145f42c7a76072ed2b10b49aff71f/data/diagnostic/mfcl/mfclo64)
 (SHA256 `f5bc1e232a86e51f920bce7271d8e0930d0b160e4d18dc46de44078f0fa24cd0`).
 
-Once the complete prepared baseline is available:
+Prepare a fresh directory, then inspect or run the full-refit recipe:
 
 ```sh
-make refit-plan INPUT=/absolute/prepared-baseline OUT=/absolute/new-retro MFCL=/absolute/mfclo64
-make refit INPUT=/absolute/prepared-baseline OUT=/absolute/new-retro MFCL=/absolute/mfclo64
+make prepare INPUT=/absolute/bet-baseline
+make refit-plan INPUT=/absolute/bet-baseline OUT=/absolute/new-retro MFCL=/absolute/bet-baseline/mfclo64
+make refit INPUT=/absolute/bet-baseline OUT=/absolute/new-retro MFCL=/absolute/bet-baseline/mfclo64
 ```
 
-`refit-plan` prints the recipe without loading packages, creating folders or
-running a model. `refit` creates a fresh `OUT` outside the repository and
+`prepare` verifies and extracts the eleven files without running MFCL. `INPUT`
+must be absent, outside the checkout, with an existing parent and no symlink
+ancestors. `refit-plan` only prints the recipe; it does not validate readiness.
+`refit` creates a fresh `OUT` outside the repository and
 copies the baseline there; it checks original files before and after.
 The parent folder of `OUT` must exist. Leave `OUT` absent until `refit` creates it.
 
@@ -55,7 +56,7 @@ comma-separated peel numbers are also accepted. Peels run serially.
 
 The original checks-repository compact-output pruning is omitted, retaining
 new native inputs, final PARs and logs under `OUT`. This is a retention-only
-change. The historical peeled files have not thereby been recovered, and new
-fits have not been executed or checked. A previous native TAG failure used a
-separate peel adapter, rather than this pinned mfclkit recipe. Exact regenerated
-input identity and native acceptance of this wrapper remain unverified.
+change. Historical peeled inputs are still missing, and no new full refits have
+been executed or checked. Exact regenerated input identity and native acceptance
+of this wrapper remain unverified; the historical Retro execution engine hash
+also remains unknown. The archive supplies the F5 engine pinned by this wrapper.

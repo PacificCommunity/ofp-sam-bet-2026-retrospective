@@ -19,14 +19,14 @@
     {
       "path": "Makefile",
       "mode": "100644",
-      "git_blob": "83b8bc4a8df3384a3ae04a3ae0ea3f0e69222c56",
-      "sha256": "4edf1a7889c33a5662ce5c98330e395f0ddd8fe179b001dbda90b0e2424af124"
+      "git_blob": "2ca32b10db16f0a5d156a7b60c23d6d7ce4114ce",
+      "sha256": "83659f531f678dcf0f1edbdb760fe86b7908169405259a83c592f17196030627"
     },
     {
       "path": "README.md",
       "mode": "100644",
-      "git_blob": "0ae875fe80950d5a7472ce094c58ce8dbcc8f6ae",
-      "sha256": "57b209effdcf9d1865b6826d21154627a515617fd4683dc33e7d44f322d110cf"
+      "git_blob": "68bd7f7353d54d0a5c4d7ca3f126cecc4086b67f",
+      "sha256": "33d094c2fce6970537df89c9bfb7701501817b298f7def94243e9f362c7c9a55"
     },
     {
       "path": "data/SHA256SUMS",
@@ -419,6 +419,89 @@
       "authorization": "Task-scoped human instruction: CI\ub41c\uac83\ub4e4\uc740 \ub9ac\ub4dc\ubbf8\uc5d0 \uadf8 \uccb4\ud06c\ubc43\uc9c0\ub098 \uc774\ub7f0\uac70\ub3c4 \uc880 \ub123\uc5b4\uc8fc\uba74 \uc88b\uaca0\ub2e4",
       "inherited_guard_git_blob": "6f9120e2cd66e76d1ab7b31aaeaf1d418a7ca137",
       "metadata_note": "Previous SHA256 matches exact current README bytes. The inherited guard Git blob was stale; that older record remains unchanged and is recorded separately."
+    },
+    {
+      "path": "Makefile",
+      "reason": "Add recovered original full-refit baseline and Make preparation; scientific results and existing link URLs unchanged.",
+      "previous_sha256": "4edf1a7889c33a5662ce5c98330e395f0ddd8fe179b001dbda90b0e2424af124",
+      "previous_git_blob": "83b8bc4a8df3384a3ae04a3ae0ea3f0e69222c56",
+      "expected_sha256": "83659f531f678dcf0f1edbdb760fe86b7908169405259a83c592f17196030627",
+      "expected_git_blob": "2ca32b10db16f0a5d156a7b60c23d6d7ce4114ce",
+      "authorization": "Task-scoped user requests for compact reproducible inputs and Make commands; parent delegates exact additive Retro baseline packaging."
+    },
+    {
+      "path": "README.md",
+      "reason": "Add recovered original full-refit baseline and Make preparation; scientific results and existing link URLs unchanged.",
+      "previous_sha256": "57b209effdcf9d1865b6826d21154627a515617fd4683dc33e7d44f322d110cf",
+      "previous_git_blob": "0ae875fe80950d5a7472ce094c58ce8dbcc8f6ae",
+      "expected_sha256": "33d094c2fce6970537df89c9bfb7701501817b298f7def94243e9f362c7c9a55",
+      "expected_git_blob": "68bd7f7353d54d0a5c4d7ca3f126cecc4086b67f",
+      "authorization": "Task-scoped user requests for compact reproducible inputs and Make commands; parent delegates exact additive Retro baseline packaging."
+    }
+  ],
+  "approved_additions": [
+    {
+      "path": ".github/workflows/verify-preserved-results.yml",
+      "mode": "100644",
+      "sha256": "c08f28a97cd68ead37bf9be44cb8017566b89bbbe9d84e7d9e558c3cfb51d092",
+      "git_blob": "110c4e685c06b912549d642ae3bf8e6ab79a484b",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "ci/check-make-entrypoints.py",
+      "mode": "100644",
+      "sha256": "071651c175a9f0493a08001961a8502f76584a7d03e69debd0844e45b57d298d",
+      "git_blob": "169873447d479027632cbf637777e120e27a4585",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "ci/check-refit-baseline.py",
+      "mode": "100644",
+      "sha256": "c853a6953b13253338d3c3504522e96aefb75cee88e53785841fa3c36954f9d9",
+      "git_blob": "e57198cb673d60cdc0127fad67e0926ffd2e95d0",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "ci/verify-preserved-files.py",
+      "mode": "100644",
+      "sha256": "dbfc363f78cae26b8f0b5706291893f12f49159b5b4afa4a19ca242261b102c9",
+      "git_blob": "f9b305e6aa617a25ded255e704ed136b6620a891",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "reproduce/README.md",
+      "mode": "100644",
+      "sha256": "1bf6b9415290ab44527202815dbb799b992c76f323c8bc787d0988fd1b1376e7",
+      "git_blob": "52ecb4db532d5c3f1c16d8dc71fd56babf71accb",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "reproduce/baseline.py",
+      "mode": "100644",
+      "sha256": "56b4a0d2f8e04c009da4335fdab368047bd1f6cdd6e22d33e597192abf2fbf6e",
+      "git_blob": "edff7eae4a225f7c94552e2aa9968c474de79110",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "reproduce/mfclkit.md",
+      "mode": "100644",
+      "sha256": "e69f388b1eec13797db68c040d8cf4b5ad84194d93e08a971108b8481da287d1",
+      "git_blob": "b18bf0cbbbb858772983b1e32dba2117d904e908",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "reproduce/refit-baseline.json",
+      "mode": "100644",
+      "sha256": "37ec66ce5250b9229bc037a4130f8758c9cfc9209fd8ee647506364e0c82f309",
+      "git_blob": "07dc9f97abe4347c5668ed057edcbe21144831be",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "reproduce/refit-baseline.tar.gz",
+      "mode": "100644",
+      "sha256": "8ddae213917bd6e14d00c608e1555d6276f54d7181998ac7e479b15e4373d481",
+      "git_blob": "cb435f8b2fbd7efdf189b27f2e0d095a2dcee89d",
+      "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
     }
   ]
 }

@@ -21,6 +21,8 @@ jobs:
         run: python3 reproduce/restore.py --verify
       - name: Check Make entry points without executing models
         run: python3 ci/check-make-entrypoints.py
+      - name: Check full-refit baseline preparation without executing models
+        run: python3 ci/check-refit-baseline.py
       - name: Verify preserved assessment files
         run: python3 ci/verify-preserved-files.py
       - name: Check preserved inputs and results
