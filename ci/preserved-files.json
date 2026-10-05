@@ -416,7 +416,7 @@
       "expected_sha256": "6bb8301006430fb00ac85da108fb9b23939ee5e03e0710bfb12e0d902e246a8e",
       "expected_git_blob": "ddce2960732360c35c717509e52d9373c3ed9230",
       "exact_added_prefix": "[![Preservation checks](https://github.com/PacificCommunity/ofp-sam-bet-2026-retrospective/actions/workflows/verify-preserved-results.yml/badge.svg?branch=main)](https://github.com/PacificCommunity/ofp-sam-bet-2026-retrospective/actions/workflows/verify-preserved-results.yml?query=branch%3Amain)\n\n",
-      "authorization": "Task-scoped human instruction: CI된것들은 리드미에 그 체크뱃지나 이런거도 좀 넣어주면 좋겠다",
+      "authorization": "Task-scoped human instruction: CI\ub41c\uac83\ub4e4\uc740 \ub9ac\ub4dc\ubbf8\uc5d0 \uadf8 \uccb4\ud06c\ubc43\uc9c0\ub098 \uc774\ub7f0\uac70\ub3c4 \uc880 \ub123\uc5b4\uc8fc\uba74 \uc88b\uaca0\ub2e4",
       "inherited_guard_git_blob": "6f9120e2cd66e76d1ab7b31aaeaf1d418a7ca137",
       "metadata_note": "Previous SHA256 matches exact current README bytes. The inherited guard Git blob was stale; that older record remains unchanged and is recorded separately."
     },
@@ -461,6 +461,18 @@
       "expected_sha256": "763d74ad9f085168bf15215a3bd08c9740c8e68a12fe14a2efcbc036b6950f1f",
       "expected_git_blob": "12fd8b9f6ad6e1c24866869576e9aabf6eb35e8a",
       "authorization": "Task-scoped latest human instruction: final results and concise mfclkit guide, FEEDBACK-0c1902921df7."
+    },
+    {
+      "path": "ci/verify-preserved-files.py",
+      "previous_sha256": "dbfc363f78cae26b8f0b5706291893f12f49159b5b4afa4a19ca242261b102c9",
+      "sha256": "3cf83eb54e9a282a4fc24e223aae7c2198fac786710ce9ed6a19fd509f39185a",
+      "reason": "Check and document the compact archive of seven exact original detailed RDS files."
+    },
+    {
+      "path": "reproduce/README.md",
+      "previous_sha256": "fda476a6310abb43d67c1b3e1b7eaeb58fe5ec7997fd302ecac0a01e206fa554",
+      "sha256": "41f30ba521023bb63f8d543a618b426bac9de9a64f0a2f17bb44f1aed887dc57",
+      "reason": "Check and document the compact archive of seven exact original detailed RDS files."
     }
   ],
   "approved_additions": [
@@ -488,14 +500,14 @@
     {
       "path": "ci/verify-preserved-files.py",
       "mode": "100644",
-      "sha256": "dbfc363f78cae26b8f0b5706291893f12f49159b5b4afa4a19ca242261b102c9",
+      "sha256": "3cf83eb54e9a282a4fc24e223aae7c2198fac786710ce9ed6a19fd509f39185a",
       "git_blob": "f9b305e6aa617a25ded255e704ed136b6620a891",
       "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
     },
     {
       "path": "reproduce/README.md",
       "mode": "100644",
-      "sha256": "fda476a6310abb43d67c1b3e1b7eaeb58fe5ec7997fd302ecac0a01e206fa554",
+      "sha256": "41f30ba521023bb63f8d543a618b426bac9de9a64f0a2f17bb44f1aed887dc57",
       "git_blob": "eb2c3837ca074aa2b7f2ebb5f5a1a824be766e6a",
       "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
     },
@@ -533,6 +545,16 @@
       "sha256": "763d74ad9f085168bf15215a3bd08c9740c8e68a12fe14a2efcbc036b6950f1f",
       "git_blob": "12fd8b9f6ad6e1c24866869576e9aabf6eb35e8a",
       "scope": "Concise reader and mfclkit documentation; not part of original assessment-source baseline."
+    },
+    {
+      "path": "reproduce/saved-results.tar.gz",
+      "mode": "100644",
+      "sha256": "cccce0855fd14c92089cea82bc87995c0301be60005563f352431c8c9687ddab"
+    },
+    {
+      "path": "reproduce/saved-results.json",
+      "mode": "100644",
+      "sha256": "4dd4424078334162e18dc8563f696cf05057ca7f25c5b8820f181c5cd5c98d85"
     }
   ]
 }

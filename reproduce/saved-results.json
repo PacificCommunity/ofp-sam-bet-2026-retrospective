@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "family": "retrospective",
+  "scope": "Exact original scientific RDS files; no fits or native-input reconstruction. Large generated native outputs and scheduler records omitted.",
+  "archive": {
+    "path": "saved-results.tar.gz",
+    "bytes": 7879590,
+    "sha256": "cccce0855fd14c92089cea82bc87995c0301be60005563f352431c8c9687ddab"
+  },
+  "files": [
+    {
+      "path": "peel_1/retro_info.rds",
+      "bytes": 1181344,
+      "sha256": "72dfc397010523d173566c69e2ed9b45a8bd1f58ce44a72a54760c7a6066cfa8",
+      "mode": 420
+    },
+    {
+      "path": "peel_2/retro_info.rds",
+      "bytes": 1164368,
+      "sha256": "14cd2b986fb9363543f17cc7ac8fe5d7d2003b3e384b8528c16474b5d813a573",
+      "mode": 420
+    },
+    {
+      "path": "peel_3/retro_info.rds",
+      "bytes": 1147660,
+      "sha256": "7555c11c9cfa95e0fc44ff507b0aa892e9d763ad6ac2db4ad36cc510d3c4bb45",
+      "mode": 420
+    },
+    {
+      "path": "peel_4/retro_info.rds",
+      "bytes": 1126528,
+      "sha256": "f1c5d104d2d571edbe69047e9a1d1b2fe5729fb1c77871a739da8228e6a95511",
+      "mode": 420
+    },
+    {
+      "path": "peel_5/retro_info.rds",
+      "bytes": 1106584,
+      "sha256": "9026a59277b280d88e4da3f190c157b277b56b5e409923788eb908b96f976b4c",
+      "mode": 420
+    },
+    {
+      "path": "peel_6/retro_info.rds",
+      "bytes": 1088296,
+      "sha256": "d7113af88a4705a248abaa9ae0d9d7b527fe0bff2b65013279fea479ece69da2",
+      "mode": 420
+    },
+    {
+      "path": "peel_7/retro_info.rds",
+      "bytes": 1067372,
+      "sha256": "f8aae7a7b8012fda223428b277849c4746356083c98295b17e466b3659dbd453",
+      "mode": 420
+    }
+  ]
+}

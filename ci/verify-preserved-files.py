@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path, PurePosixPath
 import sys
+import tarfile
 
 root = Path(__file__).resolve().parent.parent
 manifest = json.loads((root / "ci/preserved-files.json").read_text())
@@ -37,3 +38,21 @@ if failures:
     raise SystemExit(1)
 print(f'Preserved {len(manifest["files"])} assessment-source files; '
       f'verified {len(manifest.get("approved_additions", []))} approved additions.')
+
+# Compact detailed results are exact original RDS bytes.
+saved = json.loads((root / "reproduce/saved-results.json").read_text())
+archive = root / "reproduce" / saved["archive"]["path"]
+if archive.stat().st_size != saved["archive"]["bytes"] or hashlib.sha256(archive.read_bytes()).hexdigest() != saved["archive"]["sha256"]:
+    raise SystemExit("Saved-results archive changed")
+with tarfile.open(archive, "r:gz") as bundle:
+    members = bundle.getmembers()
+    expected = saved["files"]
+    if len(members) != len(expected) or len({m.name for m in members}) != len(members):
+        raise SystemExit("Saved-results archive member count changed")
+    for member, record in zip(members, expected):
+        p = PurePosixPath(member.name)
+        if p.is_absolute() or ".." in p.parts or not member.isfile() or member.name != record["path"] or member.size != record["bytes"] or member.mode != record["mode"]:
+            raise SystemExit("Invalid saved-results member")
+        if hashlib.sha256(bundle.extractfile(member).read()).hexdigest() != record["sha256"]:
+            raise SystemExit("Saved-results member changed")
+print(f"Verified {len(expected)} original detailed RDS files.")
