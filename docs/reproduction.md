@@ -1,40 +1,41 @@
 # BET 2026 Diagnostic model retrospective — reproduction details
 
+[View results](https://pacificcommunity.github.io/ofp-sam-bet-2026-retrospective/retrospective-report.html)
+or return to the [repository overview](../README.md).
 
-Saved native files, checksum verification and current restoration limits are
-documented in [native-file instructions](../reproduce/README.md).
+The seven peels end in 2017–2023; the full-data fit ends in 2024.
+These saved results are ready to read without running MFCL.
 
-[Repository overview](../README.md). Run all commands below from the repository root.
+| Results | Contents |
+| --- | --- |
+| [HTML report](../results/retrospective-report.html) | Methods, diagnostics and interpretation |
+| [Trajectories](../results/figures/retrospective-diagnostics-diagnostic-model.png) | Retrospective estimates |
+| [Recent management quantities](../results/figures/retrospective-recent-management-diagnostic-model.png) | Recent-period comparisons |
+| [Tables](../results/tables/) | Peel diagnostics, Mohn's rho and recent endpoints, in LaTeX |
+| [Saved R objects](../data/diagnostic/S0.90-F2-tau2-fixed/retro/) | `retro_info`, `retro_input_info` and `retro_metrics` for each peel |
 
-This public repository contains the compact, report-ready payload needed to
-recreate the seven-peel retrospective report for the BET 2026 Diagnostic
-model. It uses the completed model and retrospective outputs; it does not run
-MFCL or refit any peel.
-
-The payload contains the fitted Diagnostic model and the seven retrospective
-peels ending in 2017--2023, with the full-data fit ending in 2024. The report payload contains derived tables and model objects. The original
-PAR archive in `reproduce/` is separate; its missing per-peel inputs are
-listed there.
+The seven original final PARs and compact full-refit baseline are described in
+the [native-file instructions](../reproduce/README.md).
 
 ## Render
 
-Run:
+Run from the repository root:
 
 ```sh
 make results
 ```
 
-The runner reuses the pinned report runtime when available and otherwise
-installs the exact FLR4MFCL, mfclkit, and mfclshiny revisions used for
-the report. Source installation of mfclkit and mfclshiny requires authorised
-access to their private repositories.
+The runner checks saved payload hashes and writes HTML, PNG/PDF figures and
+LaTeX tables to `results/`, without refitting the model. The repository already
+contains the HTML, five PNGs and fourteen tables; PDFs are produced by rendering.
 
-The runner verifies the payload hashes before rendering a self-contained HTML
-report, publication PNG/PDF figures, and LaTeX tables in `results/`.
-
+The report runtime is listed in [run-report](../run-report). When its packages
+are not already available, installation needs authorised access to the private
+mfclkit and mfclshiny repositories.
 
 ## New full refits
 
-See the concise [mfclkit guide](../reproduce/mfclkit.md) for `make refit-plan` and
-`make refit`, their pinned native-fit package revisions, and the missing prepared
-start PAR. A new refit is separate from rendering the saved report.
+The [mfclkit guide](../reproduce/mfclkit.md) explains `make prepare`,
+`make refit-plan` and `make refit`. The compact baseline now includes the
+original `00.fixed.par`. Matching historical peel-specific inputs remain
+incomplete; new full refits have not been compared with the saved results.

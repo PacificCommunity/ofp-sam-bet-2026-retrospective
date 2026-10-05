@@ -416,7 +416,7 @@
       "expected_sha256": "6bb8301006430fb00ac85da108fb9b23939ee5e03e0710bfb12e0d902e246a8e",
       "expected_git_blob": "ddce2960732360c35c717509e52d9373c3ed9230",
       "exact_added_prefix": "[![Preservation checks](https://github.com/PacificCommunity/ofp-sam-bet-2026-retrospective/actions/workflows/verify-preserved-results.yml/badge.svg?branch=main)](https://github.com/PacificCommunity/ofp-sam-bet-2026-retrospective/actions/workflows/verify-preserved-results.yml?query=branch%3Amain)\n\n",
-      "authorization": "Task-scoped human instruction: CI\ub41c\uac83\ub4e4\uc740 \ub9ac\ub4dc\ubbf8\uc5d0 \uadf8 \uccb4\ud06c\ubc43\uc9c0\ub098 \uc774\ub7f0\uac70\ub3c4 \uc880 \ub123\uc5b4\uc8fc\uba74 \uc88b\uaca0\ub2e4",
+      "authorization": "Task-scoped human instruction: CI된것들은 리드미에 그 체크뱃지나 이런거도 좀 넣어주면 좋겠다",
       "inherited_guard_git_blob": "6f9120e2cd66e76d1ab7b31aaeaf1d418a7ca137",
       "metadata_note": "Previous SHA256 matches exact current README bytes. The inherited guard Git blob was stale; that older record remains unchanged and is recorded separately."
     },
@@ -437,6 +437,30 @@
       "expected_sha256": "33d094c2fce6970537df89c9bfb7701501817b298f7def94243e9f362c7c9a55",
       "expected_git_blob": "68bd7f7353d54d0a5c4d7ca3f126cecc4086b67f",
       "authorization": "Task-scoped user requests for compact reproducible inputs and Make commands; parent delegates exact additive Retro baseline packaging."
+    },
+    {
+      "path": "reproduce/mfclkit.md",
+      "reason": "Organise final result links and shorten mfclkit instructions requested by Kyuhan; existing scientific files, reports, URLs and executable code remain unchanged.",
+      "previous_sha256": "e69f388b1eec13797db68c040d8cf4b5ad84194d93e08a971108b8481da287d1",
+      "expected_sha256": "4c6bf12d690f3a5c4421261a6977d1752ce27c011a6a6459dbd39b3e3721fa65",
+      "expected_git_blob": "b978ae4b4c468f4b04d0f9df84b55b783e536cbd",
+      "authorization": "Task-scoped latest human instruction: final results and concise mfclkit guide, FEEDBACK-0c1902921df7."
+    },
+    {
+      "path": "reproduce/README.md",
+      "reason": "Organise final result links and shorten mfclkit instructions requested by Kyuhan; existing scientific files, reports, URLs and executable code remain unchanged.",
+      "previous_sha256": "1bf6b9415290ab44527202815dbb799b992c76f323c8bc787d0988fd1b1376e7",
+      "expected_sha256": "fda476a6310abb43d67c1b3e1b7eaeb58fe5ec7997fd302ecac0a01e206fa554",
+      "expected_git_blob": "eb2c3837ca074aa2b7f2ebb5f5a1a824be766e6a",
+      "authorization": "Task-scoped latest human instruction: final results and concise mfclkit guide, FEEDBACK-0c1902921df7."
+    },
+    {
+      "path": "docs/reproduction.md",
+      "reason": "Organise final result links and shorten mfclkit instructions requested by Kyuhan; existing scientific files, reports, URLs and executable code remain unchanged.",
+      "previous_sha256": "f2bd25517f8181de981f71d977a7bd2cd4d0cce7083ca1d9b477ea90d88d69b6",
+      "expected_sha256": "763d74ad9f085168bf15215a3bd08c9740c8e68a12fe14a2efcbc036b6950f1f",
+      "expected_git_blob": "12fd8b9f6ad6e1c24866869576e9aabf6eb35e8a",
+      "authorization": "Task-scoped latest human instruction: final results and concise mfclkit guide, FEEDBACK-0c1902921df7."
     }
   ],
   "approved_additions": [
@@ -471,8 +495,8 @@
     {
       "path": "reproduce/README.md",
       "mode": "100644",
-      "sha256": "1bf6b9415290ab44527202815dbb799b992c76f323c8bc787d0988fd1b1376e7",
-      "git_blob": "52ecb4db532d5c3f1c16d8dc71fd56babf71accb",
+      "sha256": "fda476a6310abb43d67c1b3e1b7eaeb58fe5ec7997fd302ecac0a01e206fa554",
+      "git_blob": "eb2c3837ca074aa2b7f2ebb5f5a1a824be766e6a",
       "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
     },
     {
@@ -485,8 +509,8 @@
     {
       "path": "reproduce/mfclkit.md",
       "mode": "100644",
-      "sha256": "e69f388b1eec13797db68c040d8cf4b5ad84194d93e08a971108b8481da287d1",
-      "git_blob": "b18bf0cbbbb858772983b1e32dba2117d904e908",
+      "sha256": "4c6bf12d690f3a5c4421261a6977d1752ce27c011a6a6459dbd39b3e3721fa65",
+      "git_blob": "b978ae4b4c468f4b04d0f9df84b55b783e536cbd",
       "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
     },
     {
@@ -502,6 +526,13 @@
       "sha256": "8ddae213917bd6e14d00c608e1555d6276f54d7181998ac7e479b15e4373d481",
       "git_blob": "cb435f8b2fbd7efdf189b27f2e0d095a2dcee89d",
       "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
+    },
+    {
+      "path": "docs/reproduction.md",
+      "mode": "100644",
+      "sha256": "763d74ad9f085168bf15215a3bd08c9740c8e68a12fe14a2efcbc036b6950f1f",
+      "git_blob": "12fd8b9f6ad6e1c24866869576e9aabf6eb35e8a",
+      "scope": "Concise reader and mfclkit documentation; not part of original assessment-source baseline."
     }
   ]
 }
