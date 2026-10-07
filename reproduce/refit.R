@@ -94,7 +94,7 @@ for (i in seq_len(nrow(pins))) {
   if (file.info(paths[[i]])$size != pins$bytes[[i]] || !identical(sha256(paths[[i]]), pins$sha256[[i]])) fail(paste("Baseline source pin differs:", pins$path[[i]]))
 }
 regular(file.path(input, "00.fixed.par"))
-if (!identical(unname(tools::md5sum(file.path(input, "00.fixed.par"))), "01c9056f7268fb643cfc77382980ace0")) fail("The original prepared 00.fixed.par is required; no automatic initialization fallback.")
+if (file.info(file.path(input, "00.fixed.par"))$size != 2900819 || !identical(sha256(file.path(input, "00.fixed.par")), "f7851619bbd748a3299cd181c6f5f37afa7132a29af3594f6a02380c508b58ec")) fail("The original prepared 00.fixed.par is required; no automatic initialization fallback.")
 regular(program)
 if (file.access(program, 1L) != 0L || file.info(program)$size != 34549392 || !identical(sha256(program), "f5bc1e232a86e51f920bce7271d8e0930d0b160e4d18dc46de44078f0fa24cd0")) fail("MFCL must be the pinned F5 engine (34,549,392 bytes).")
 source_paths <- c(paths, file.path(input, "00.fixed.par"), program)

@@ -14,6 +14,9 @@ From the repository root:
 
 ```sh
 make verify
+make list
+make extract OUT=/tmp/bet-saved-results
+make saved-pars OUT=/tmp/bet-peel-pars
 make results
 ```
 

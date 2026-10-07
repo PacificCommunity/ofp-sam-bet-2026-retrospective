@@ -19,14 +19,14 @@
     {
       "path": "Makefile",
       "mode": "100644",
-      "git_blob": "2ca32b10db16f0a5d156a7b60c23d6d7ce4114ce",
-      "sha256": "83659f531f678dcf0f1edbdb760fe86b7908169405259a83c592f17196030627"
+      "git_blob": "f291a76f4217ee65b0a94fdc66001dbbdfc843c6",
+      "sha256": "145ca0f5a09002a3db9430b6e10e8a303d32cea86d9f8fe4fe83ed03daad8d2b"
     },
     {
       "path": "README.md",
       "mode": "100644",
-      "git_blob": "68bd7f7353d54d0a5c4d7ca3f126cecc4086b67f",
-      "sha256": "33d094c2fce6970537df89c9bfb7701501817b298f7def94243e9f362c7c9a55"
+      "git_blob": "fe670e8986536f01342ccb00d763e8ab2f041785",
+      "sha256": "154604ab26b1b93c33d10c85913fdecefab1232a739620a0df6e8e53ad69bbe3"
     },
     {
       "path": "data/SHA256SUMS",
@@ -507,8 +507,8 @@
     {
       "path": "reproduce/README.md",
       "mode": "100644",
-      "sha256": "41f30ba521023bb63f8d543a618b426bac9de9a64f0a2f17bb44f1aed887dc57",
-      "git_blob": "eb2c3837ca074aa2b7f2ebb5f5a1a824be766e6a",
+      "sha256": "7281098616f7e4f8cfb883dda9c69669f5bad5c1d37b5607f371312179089121",
+      "git_blob": "2104805f3a939424827c0228859a7962ce6803ba",
       "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
     },
     {
@@ -521,8 +521,8 @@
     {
       "path": "reproduce/mfclkit.md",
       "mode": "100644",
-      "sha256": "4c6bf12d690f3a5c4421261a6977d1752ce27c011a6a6459dbd39b3e3721fa65",
-      "git_blob": "b978ae4b4c468f4b04d0f9df84b55b783e536cbd",
+      "sha256": "ebdd4fb2da0b397d8c3b017697330fc3e97f784e6b2b45b51bf45993f18490ac",
+      "git_blob": "c7460eadfa8d9046b1659d741ddaf7a95fba6c99",
       "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
     },
     {
@@ -555,6 +555,16 @@
       "path": "reproduce/saved-results.json",
       "mode": "100644",
       "sha256": "4dd4424078334162e18dc8563f696cf05057ca7f25c5b8820f181c5cd5c98d85"
+    },
+    {
+      "path": "reproduce/verify.R",
+      "mode": "100644",
+      "sha256": "df5415c0c705799b5339e412c173a403075103a2fe27f905b6386dd34008a4e9"
+    },
+    {
+      "path": "reproduce/baseline.R",
+      "mode": "100644",
+      "sha256": "409e283efe94168033af47ff4cfa28d1ebd4ae45ff5f674031d566d4db796e01"
     }
   ]
 }

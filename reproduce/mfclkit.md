@@ -13,7 +13,7 @@ make results
 ```
 
 `make results` rebuilds the report from saved model objects. `make help`
-lists the commands. The [saved-file guide](README.md) describes the two native
+lists the commands. The [saved-file guide](README.md) describes the native
 archives and the missing historical peel inputs.
 
 ## Full refits with mfclkit
@@ -38,11 +38,13 @@ Their file hashes are recorded in [the baseline manifest](refit-baseline.json).
 
 ```sh
 make prepare INPUT=/absolute/bet-baseline
-make refit-plan INPUT=/absolute/bet-baseline OUT=/absolute/new-retro MFCL=/absolute/bet-baseline/mfclo64
-make refit INPUT=/absolute/bet-baseline OUT=/absolute/new-retro MFCL=/absolute/bet-baseline/mfclo64
+make refit-plan INPUT=/absolute/bet-baseline OUT=/absolute/new-retro
+make refit INPUT=/absolute/bet-baseline OUT=/absolute/new-retro
 ```
 
-`prepare` verifies and extracts the eleven files without running MFCL.
+`prepare` verifies and extracts the eleven files with base R, without running
+MFCL. `make baseline-list` lists them; `MFCL` defaults to `INPUT/mfclo64`.
+Verification needs `sha256sum` (or `shasum`), with no Python.
 Leave `INPUT` absent until `prepare` creates it and `OUT` absent until `refit`
 creates it. Use absolute paths outside the checkout, with existing parents.
 `refit-plan` prints the recipe only; it does not check execution readiness.

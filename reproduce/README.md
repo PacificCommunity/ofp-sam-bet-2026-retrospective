@@ -19,12 +19,15 @@ make prepare INPUT=/absolute/new-baseline
 baseline without running MFCL. `INPUT` must be absent, outside the checkout,
 with an existing parent and no symlink ancestors.
 
-To extract only the seven saved final PARs:
+Extract the seven final PARs or the detailed original RDS into new folders:
 
 ```sh
-mkdir /tmp/bet-retro-pars
-tar -xzf reproduce/native.tar.gz -C /tmp/bet-retro-pars
+make saved-pars OUT=/absolute/new-retro-pars
+make extract OUT=/absolute/new-retro-results
 ```
+
+Both commands verify every member before extraction. They use base R and
+`sha256sum` (or `shasum`), without Python. `make list` lists the saved peels.
 
 The original PAR bytes, permissions and checksums are recorded in
 [files.json](files.json). Their generated FRQ, INI and TAG sets remain missing,
@@ -34,8 +37,7 @@ The [2026 results](https://pacificcommunity.github.io/ofp-sam-bet-2026-retrospec
 remain available; `make results` rebuilds their report from the cached payload.
 For new full refits and the required packages, see the [mfclkit guide](mfclkit.md).
 
-For the detailed original RDS, extract `reproduce/saved-results.tar.gz` into an
-empty directory and read `peel_1/retro_info.rds` through `peel_7/retro_info.rds`
+For the detailed original RDS, use `make extract` above and read `peel_1/retro_info.rds` through `peel_7/retro_info.rds`
 with `readRDS()`. Member checksums are in [saved-results.json](saved-results.json).
 The archived REP bytes preserve the original reports; matching peeled inputs
 are still needed for native reruns.
