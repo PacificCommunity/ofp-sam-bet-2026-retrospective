@@ -479,7 +479,7 @@
     {
       "path": ".github/workflows/verify-preserved-results.yml",
       "mode": "100644",
-      "sha256": "c08f28a97cd68ead37bf9be44cb8017566b89bbbe9d84e7d9e558c3cfb51d092",
+      "sha256": "f7e7841af1ce86a6f6e60fc7762bc0eb014d377574bab826fa205e024c92e78a",
       "git_blob": "110c4e685c06b912549d642ae3bf8e6ab79a484b",
       "scope": "Additive full-refit baseline preservation and source-only preparation checks; not part of original assessment-source baseline."
     },
