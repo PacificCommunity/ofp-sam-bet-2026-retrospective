@@ -25,8 +25,8 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "git_blob": "fe670e8986536f01342ccb00d763e8ab2f041785",
-      "sha256": "154604ab26b1b93c33d10c85913fdecefab1232a739620a0df6e8e53ad69bbe3"
+      "git_blob": "bf10440322973e9712bb2c0e7a5250678ca8b097",
+      "sha256": "058c01a90807b2e85e2ec901b69ee61364e9859e984b64f028b4880507746b99"
     },
     {
       "path": "data/SHA256SUMS",
@@ -473,6 +473,14 @@
       "previous_sha256": "fda476a6310abb43d67c1b3e1b7eaeb58fe5ec7997fd302ecac0a01e206fa554",
       "sha256": "41f30ba521023bb63f8d543a618b426bac9de9a64f0a2f17bb44f1aed887dc57",
       "reason": "Check and document the compact archive of seven exact original detailed RDS files."
+    },
+    {
+      "path": "README.md",
+      "reason": "Clarify existing reader commands, runtime requirements and full-fit scope; retain scientific content, result links and heading anchors.",
+      "previous_sha256": "154604ab26b1b93c33d10c85913fdecefab1232a739620a0df6e8e53ad69bbe3",
+      "previous_git_blob": "fe670e8986536f01342ccb00d763e8ab2f041785",
+      "expected_sha256": "058c01a90807b2e85e2ec901b69ee61364e9859e984b64f028b4880507746b99",
+      "expected_git_blob": "bf10440322973e9712bb2c0e7a5250678ca8b097"
     }
   ],
   "approved_additions": [

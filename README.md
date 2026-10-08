@@ -23,6 +23,9 @@ make results
 The runner checks payload hashes, then writes a self-contained HTML report,
 PNG/PDF figures and LaTeX tables to `results/`. Rendering uses completed
 model outputs and does not refit the peels.
+Verification, extraction and baseline preparation use Make, base R and
+archive/hash tools. Report rebuilding uses the `mfclshiny` R runtime in the
+[runtime instructions](docs/reproduction.md).
 
 The seven original peel PARs are retained, but their matching peeled input
 sets are incomplete, so saved-PAR native reruns remain unavailable. See
